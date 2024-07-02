@@ -1,0 +1,881 @@
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+
+    * {
+        margin: 0;
+        /*Establece los márgenes de un elemento*/
+        padding: 0;
+        /*El padding de un elemento es el espacio entre su contenido y su borde.*/
+        box-sizing: border-box;
+        /*Dene cómo se calculan el ancho y el alto de un elemento: si deben incluir relleno y bordes, o no.*/
+        font-family: 'Barlow';
+        /*Especifica la fuente de texto para un elemento. Es posible especificar varios nombres de fuente como un sistema 
+     alternativo. Si el navegador no admite la primera fuente, prueba con la siguiente fuente.*/
+    }
+
+    html {
+        scroll-behavior: smooth;
+        /*Especifica si animar suavemente la posición de desplazamiento, en lugar de un salto directo, cuando el
+    usuario hace clic en un enlace dentro de un cuadro  desplazable.*/
+    }
+
+    body {
+        background-color: #dde1e9;
+        /*Establece el color de fondo de un elemento.*/
+    }
+
+    /* *********** */
+    /* ENCABEZADO - MENU */
+    /* *********** */
+    .contenedor-header {
+        width: 100%; /*Establece el ancho de un elemento.*/
+        position: fixed;
+        /*Especifica el tipo de método de posicionamiento utilizado para un elemento (estatico, relativo, absoluto, fijo o pegajoso).*/
+
+        border-bottom: 1px solid #1f283e;  /*La propiedad border-bottompermite definir de una vez todas las propiedades individuales 
+        border-bottom-color, border-bottom-style, y border-bottom-width*/
+        background-color: rgb(250, 248, 248);
+        z-index: 99;/* Especifica el orden de apilamiento de un elemento. Un elemento con mayor orden de apilamiento siempre esta
+        delante de un elemento con menor orden de apilamiento*/
+         padding: 0 20px;
+    }
+
+    .contenedor-header header {
+        max-width: 1100px; /*Define la anchura maxima de un elemento.*/
+        margin: auto;
+        width: 100%;
+        display: flex; /*Establece el comportamiento de visualización (el tipo de cuadro de representación) de un elemento.*/
+        justify-content: space-between; /*Alinea los elementos del contenedor exible cuando los
+         elementos no utilizan todo el espacio disponible en el eje principal (horizontalmente)*/
+        align-items: center; /*Especifica la alineación predeterminada de los elementos dentro del contenedor exible cuando dichos elementos  ocupan una sola linea.*/
+        padding: 20px 0;           
+        color: #5c5959;/*Establece el color del texto.*/
+    }
+
+    .txtRojo {
+        color: #07ac96;       
+       
+       
+    }  
+
+    .contenedor-header header nav a {
+        display: inline-block; /*Establece el comportamiento de visualización (el tipo de
+        cuadro de representación) de un elemento.*/
+        text-decoration: none;
+        color: #000000;
+        padding: 4px;
+        text-transform: uppercase; /*Controla las mayúsculas del texto*/
+        font-size: 13px;
+    }
+
+    .contenedor-header header nav a:hover {
+        color: #07ac96;
+    }
+
+    .contenedor-header header .redes a {
+        text-decoration: none;
+        color: #07ac96;
+        display: inline-block;
+        padding: 5px 8px;
+    }
+
+    
+
+    .nav-responsive{
+        display: none;
+        font-size: 30px;
+        color: #07ac96;
+     }
+
+    /* *********** */
+    /* SECCIÓN INICIO */
+    /* *********** */
+    .inicio {
+        height: 100vh;
+        background: linear-gradient(rgba(33, 66, 39, 0.486), rgba(33, 66, 39, 0.486)), url(img/fondo.jpg);
+        background-size: cover;/*Establece el tamaño de las imágenes de fondo.*/
+        background-position: center center;/*Establece la posición inicial de una imagen de fondo. El
+        primer valor es la posición horizontal y el segundo la
+        posición vertical.*/
+        color: #fff;
+        position: relative;/*Especifica el tipo de método de posicionamiento utilizad
+        para un elemento (estático, relativo, absoluto, fijo o pegajoso).*/
+    }
+
+    .inicio .contenido-seccion {
+        max-width: 1100px; /*Define la anchura máxima de un elemento.*/
+        margin: auto;
+    }
+
+    .inicio .info {
+        width: fit-content;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*Aplica una transformación 2D o 3D a un elemento*/
+        text-align: center; /*Aplica una transformación 2D o 3D a un elemento*/
+    }
+
+    .inicio .info h2 {
+        font-size: 3rem;
+        letter-spacing: 3px;/*Aumenta o disminuye el espacio entre caracteres en un
+        texto.
+        */
+    }
+
+    .inicio .info p {
+        margin: 20px;
+        color: #ffffff;
+        font-size: 16px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+
+    /* *********** */
+    /* NOSOTROS */
+    /* *********** */
+    .nosotros {
+        max-width: 1100px;
+        margin: auto;
+        background-color: #dde1e9;
+        padding: 100px 20px;
+    }
+
+    .nosotros .fila {
+        display: flex;
+        align-items: center;
+    }
+
+    .nosotros .fila .col {
+        width: 50%;
+    }
+
+    .nosotros .fila .col img {
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .nosotros .fila .col .contenedor-titulo {
+        display: flex;
+        align-items: center
+    }
+
+    .nosotros .fila .col .contenedor-titulo .numero {
+        color: #07ac96;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+    }
+
+    .nosotros .fila .col .contenedor-titulo .info {
+        margin-left: 30px;
+    }
+
+    .nosotros .fila .col .contenedor-titulo .info .frase {
+        color: #07ac96;
+    }
+
+    .nosotros .fila .col .contenedor-titulo .info h2 {
+        font-size: 3rem;
+    }
+
+    .nosotros .fila .col p {
+        margin-bottom: 10px;
+        line-height: 28px;
+    }
+
+    .nosotros .fila .col .p-especial {
+        font-weight: bold; /*Especifica la altura de una línea.*/
+    }
+
+    .nosotros .fila .col li {
+        margin-bottom: 20px;
+        color: #1f283e;
+    }
+
+    .nosotros .fila .col li span {
+        font-weight: bold;
+        color: #07ac96;
+    } 
+
+
+
+    
+    /* ********************************** */
+    /*        SERVICIOS                   */
+    /* ********************************** */
+    .main {
+
+        margin: 2%;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+
+    }
+
+    .card {
+        width: 20%;
+        display: inline-block;
+        margin: 2%;
+        text-align: center;
+
+    }
+
+    .card:hover {
+
+        transform: scale(1.2);
+        transition: 1s;
+    }
+
+    .image img {
+        width: 100%;
+        border-top-right-radius: 5px;/*Define el radio de la esquina superior derecha.*/
+        border-top-left-radius: 5px;/*Define el radio de la esquina superior izquierda.*/
+
+
+    }
+
+    #servicios.title {
+
+        text-align: center;
+        padding: 10px;
+
+
+    }
+
+    #servicios h1 {
+        font-size: 20px;
+        color: #07ac96;
+    }
+
+    #servicios.des {
+        padding: 3px;
+        text-align: center;
+
+        padding-top: 10px; /*Establece el padding inferior (espacio) de un elemento.*/
+        border-bottom-right-radius: 5px; /*Define el radio de la esquina inferior derecha.*/
+        border-bottom-left-radius: 5px; /*Define el radio de la esquina inferior izquierda.*/
+    }
+
+     /* ***************** */
+    /* ESPECIALIDADES */
+    /* ***************** */
+    #especialidades {
+        padding: 50px 0;
+    }
+
+    #especialidades h2 {
+        text-align: center;
+        font-weight: bold; /*Establece qué tan gruesos o delgados deben mostrarse
+        los caracteres del texto*/
+        font-size: 30px;
+    }
+
+    #especialidades .fila {
+        display: flex;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    #especialidades .fila .item img {
+        max-width: 100px;
+    }
+
+    #especialidades .fila .item {
+        display: flex;
+        align-items: center; /*Especifica la alineación predeterminada de los elementos
+        dentro del contenedor exible cuando dichos elementos
+        ocupan una sola linea*/
+        margin: 20px 10px;
+        padding: 5px;
+    }
+
+    #especialidades .fila .item:hover {
+        background-color: #cbf5ff;
+        transform: scale(1.1);
+        transition: .5s;/*Especifica cuántos segundos (s) o milisegundos (ms) tarda
+        en completarse un efecto de transición.*/
+    }
+
+    #especialidades .fila .item .info {
+        margin-left: 15px; /*Establece el margen izquierdo de un elemento.*/
+        font-size: 14px;
+    }
+
+    #especialidades button {
+        display: block; /*Establece el comportamiento de visualización (el tipo de
+        cuadro de representación) de un elemento.*/
+        width: fit-content;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 20px;
+        border: none;
+        background-color: #08c3f1;
+        color: #fff;
+        padding: 7px 25px;
+        border-radius: 30px;
+        cursor: pointer; /*Especifica el cursor del ratón que se mostrará cuando se
+        apunte sobre un elemento.
+        */
+    }
+
+    
+
+/* ********************************** */
+/*                Staff Medico        */
+/* ********************************** */
+.container-card{
+	
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	color: #000000;
+}
+.card1{
+	width: 100%;
+	margin: 10px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card1:hover{
+	box-shadow: 5px 5px 20px #07ac96;
+	transform: translateY(-3%);
+ 
+    
+    
+}
+.card1 img{
+	width: 100%;
+	height: 300px;
+    
+}
+.card1 .contenido-card{
+	padding: 10px;
+	text-align: center;
+}
+.card1 .contenido-card h3{
+	margin-bottom: 15px;
+	color: #07ac96;
+}
+.card1 .contenido-card p{
+	line-height: 1.8;
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card1 .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #07ac96;
+	border: 1px solid #07ac96;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card1 .contenido-card a:hover{
+	background: #07ac96;
+	color: #fff;
+}
+
+
+
+
+    /* ********************************** */
+    /*                NOVEDADES               */
+    /* ********************************** */
+    .post-filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.5rem; /*Establece el espacio entre las columnas.*/
+        margin-top: 2rem !important;
+    }
+
+    .filter-item {
+        font-size: 0.9rem;
+        font-weight: 500; /*Establece qué tan gruesos o delgados deben mostrarse los caracteres del texto.*/
+        cursor: pointer;
+        
+    }
+
+    .active-filter {
+        background: var(--second-color);
+        color: var(--bg-color);
+        padding: 4px 10px;
+        border-radius: 3px; /*/Define el radio de las esquinas del borde del elemento*/
+        color: #07ac96;
+        font-weight: bold;
+    
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto)); /*Especifica el número (y el ancho) de las columnas en un
+        diseño grid.*/
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    .post-box {
+        background: var(--bg-color);
+        box-shadow: 0 4px 14px hsl(35deg 25% 15% / 10%); /*Adjunta una o más sombras a un elemento.*/
+        padding: 15px;
+        border-radius: 0.5rem;
+    }
+
+    .post-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover; /*Se utiliza para especificar cómo se debe cambiar el
+        tamaño de un <img> o <video> para que se ajuste a su contenedor.*/
+        object-position: center; /*Se usa junto con object-t para especificar cómo se debe
+        colocar un <img> o <video> con las coordenadas x/y
+        dentro de su «propio cuadro de contenido».*/
+        border-radius: 0.5rem;
+    }
+
+    .category {
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--second-color);
+    }
+
+    .post-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--text-color);
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /*permite limitar el contenido de un bloque al número especificado de líneas.*/
+        -webkit-box-orient: vertical;/*establece si un elemento dispone su contenido horizontal o verticalmente*/
+        overflow: hidden;
+    }
+
+    .post-date {
+        display: flex;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        margin-top: 4px;
+        font-weight: 400;
+    }
+
+    .post-description {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin: 5px 0 10px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    /* --------------------------------------- */
+  /* -------------- Turnos---------------*/
+  /* --------------------------------------- */
+
+  
+
+  .formulario > div {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; 
+    text-align: center;
+}
+
+  .formulario .radio label{
+    display: inline-block;
+    cursor: pointer;
+    color: #07ac96;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 0.85em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }  
+   
+
+
+
+    .formulario .radio label:hover{
+      background: rgba(255, 65, 54, 0.1); }
+
+    .formulario .radio label:before{
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: none;
+      border: 3px solid #07ac96; }
+
+  .formulario input[type="radio"] {
+    display: none; }
+
+    .formulario input[type="radio"]:checked + label:before {
+      display: none; }
+
+    .formulario input[type="radio"]:checked + label {
+      padding: 5px 15px;
+      background: #07ac96;
+      border-radius: 2px;
+      color: #fff; }
+
+  
+
+      .turnos button {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        margin-top: 30px;
+        border: none;
+        background-color: #07ac96;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .turnos .fila {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between; 
+    }
+
+    .turnos .fila .col {
+        width: 30%;
+    }
+
+    .turnos .fila input {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        outline: none;
+    }
+
+
+
+
+    /* *********** */
+    /* CONTACTO */
+    /* *********** */
+    .contacto {
+        color: #fff;
+        background-size: cover;
+        background-position: center center;
+        padding: 100px 20px;
+
+    }
+
+    .contacto .contenido-seccion {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .contacto .contenedor-titulo {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .contacto .contenedor-titulo .numero {
+        color: #07ac96;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+    }
+
+    .contacto .contenedor-titulo .info {
+        margin-left: 30px;
+    }
+
+    .contacto .contenedor-titulo .info .frase {
+        color: #07ac96;
+    }
+
+    .contacto .contenedor-titulo .info h2 {
+        font-size: 3rem;
+        color: #0a0a0a;
+    }
+
+    .contacto .fila {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between; 
+    }
+
+    .contacto .fila .col {
+        width: 48%;
+    }
+
+    .contacto .fila input {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        outline: none;
+    }
+
+    .contacto textarea {
+        display: block;
+        margin-top: 20px;
+        padding: 15px;
+        font-size: 20px;
+        outline: none;
+        width: 100%;
+        height: 200px;
+    }
+
+    .contacto button {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        margin-top: 30px;
+        border: none;
+        background-color: #07ac96;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contacto .fila-datos {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+        font-size: 18px;
+        text-align: center;
+        color: #141414;
+    }
+
+    .contacto i {
+        color: #07ac96;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    
+
+    /* *********************/
+    /* Whattsapp */
+    /* *********************/
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #07ac96;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .float:hover {
+        text-decoration: none;
+        color: #07ac96;
+        background-color: #fff;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
+
+
+    /* *********** */
+    /* RESPONSIVE */
+    /* *********** */
+    @media only screen and (max-width: 900px) {
+    
+        header nav{
+            position: initial;
+            display: none;
+            transform: translate(0);
+            font-size: 30px;
+            
+        }
+        header .redes{
+            display: none;
+        }
+        .nav-responsive{
+            display: block;
+            
+        }
+        nav.responsive{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position:absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color:#151623;
+            z-index: 99;
+            
+           
+        }
+        nav.responsive a{
+            display: block;
+            width: fit-content;
+            margin: 10px auto;
+            font-size: 30px;
+    
+        }
+        
+        .inicio .opciones {
+            display: none;
+        }
+
+        .nosotros .fila {
+            display: block;
+        }
+
+        .nosotros .fila .col {
+            width: 100%;
+            margin: auto;
+        }
+
+        .nosotros .fila .col img {
+            max-width: 200px;
+            display: block;
+            margin: auto;
+        }
+
+        
+        .contacto .fila {
+            display: block;
+        }
+
+        .contacto .fila .col {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .contacto .fila-datos {
+            display: block;
+        }
+
+        .contacto .fila-datos .col {
+            margin-bottom: 20px;
+        }
+
+        
+
+        #especialidades .fila {
+            display: block;
+        }
+
+        #especialidades .fila .item:hover {
+
+            transform: scale(1.1);
+            transition: 1s;
+        }
+
+        #servicios .card {
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #servicios .main {
+            margin: 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+
+        }
+
+        .card {
+            width: 90%;
+            display: inline-block;
+            margin: 10%;
+            text-align: center;
+
+        }
+
+        .card:hover {
+
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+
+        .image img {
+            width: 90%;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+
+
+        }
+
+        #servicios.title {
+
+            text-align: center;
+            padding: 25px;
+
+
+        }
+
+        #servicios h1 {
+            font-size: 35px;
+            color: #07ac96;
+        }
+
+        #servicios.des {
+            padding: 15px;
+            text-align: center;
+
+            padding-top: 25px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .container-card{
+            flex-wrap: wrap;
+        }
+        .card1{
+            margin: 15px;
+            width: 60%;
+            margin-left: 16%;           
+        }
+        .contenedor-header header nav a {           
+            font-size: 35px;
+            color:#07ac96
+       
+
+            
+        }
+    
+
+    
+    }
+   
